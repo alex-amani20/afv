@@ -378,3 +378,12 @@ li {margin-bottom:7px;}
     S'INSCRIRE À L'ASSOCIATION FEU VERT (AFV)
   </a>
 </div>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js")
+      .then(() => console.log("Application AFV activée"))
+      .catch(error => console.error("Erreur :", error));
+  });
+}
+</script>
