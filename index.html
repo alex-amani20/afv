@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#075c3b">
+<meta name="description" content="Association Feu Vert (AFV) : accompagnement académique, méthodologique et scientifique des étudiants.">
+<title>Association Feu Vert | AFV</title>
+
+<style>
+:root {
+  --vert:#075c3b;
+  --vert2:#0b8052;
+  --or:#e8b83e;
+  --clair:#f3f8f5;
+  --texte:#24352d;
+  --blanc:#ffffff;
+}
+* {box-sizing:border-box; margin:0; padding:0; scroll-behavior:smooth;}
+body {
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--texte);
+  line-height:1.7;
+  background:#fff;
+}
+header {
+  background:var(--vert);
+  color:white;
+  padding:17px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
+.logo {font-size:25px;font-weight:bold;letter-spacing:1px;}
+.logo span {color:var(--or);}
+nav {display:flex;flex-wrap:wrap;gap:15px;}
+nav a {color:white;text-decoration:none;font-size:14px;font-weight:bold;}
+nav a:hover {color:var(--or);}
+.hero {
+  background:linear-gradient(120deg,rgba(0,65,40,.94),rgba(5,112,72,.88));
+  color:white;
+  text-align:center;
+  padding:85px 7%;
+}
+.hero h1 {font-size:clamp(30px,5vw,48px);line-height:1.2;margin-bottom:18px;}
+.hero h1 span {color:var(--or);}
+.hero p {max-width:780px;margin:12px auto;font-size:17px;}
+.slogan {color:#ffe39a;font-weight:bold;font-size:19px;}
+.btn {
+  display:inline-block;
+  margin:12px 7px;
+  padding:12px 23px;
+  border-radius:7px;
+  background:var(--or);
+  color:#183426;
+  font-weight:bold;
+  text-decoration:none;
+}
+.btn:hover {background:white;}
+section {padding:65px 7%;}
+section:nth-of-type(even) {background:var(--clair);}
+.section-title {
+  color:var(--vert);
+  font-size:29px;
+  text-align:center;
+  margin-bottom:12px;
+}
+.underline {
+  width:65px;height:4px;background:var(--or);
+  margin:0 auto 32px;border-radius:5px;
+}
+.intro {max-width:900px;margin:auto;text-align:center;}
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:22px;margin-top:30px;
+}
+.card {
+  background:white;padding:25px;border-radius:12px;
+  box-shadow:0 4px 18px rgba(0,0,0,.07);
+  border-top:4px solid var(--vert2);
+}
+.card h3 {color:var(--vert);margin-bottom:10px;}
+.card .symbol {font-size:30px;margin-bottom:8px;}
+.team-card {text-align:center;}
+.team-card h3 {margin-top:8px;}
+.role {color:var(--vert2);font-weight:bold;}
+.number {
+  display:block;
+  color:var(--vert);
+  font-size:19px;
+  font-weight:bold;
+  text-decoration:none;
+  margin:8px 0;
+}
+.number:hover {color:#bd8611;}
+footer {
+  background:#063d2a;color:white;text-align:center;
+  padding:30px 7%;
+}
+footer p {margin:5px 0;}
+.small {font-size:13px;color:#d6e8dd;}
+ul {padding-left:22px;}
+li {margin-bottom:7px;}
+@media(max-width:600px) {
+  header {justify-content:center;text-align:center;}
+  nav {justify-content:center;gap:10px;}
+  nav a {font-size:12px;}
+  .hero {padding:60px 6%;}
+  section {padding:48px 6%;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">AFV<span> •</span></div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#missions">Missions</a>
+    <a href="#services">Services</a>
+    <a href="#equipe">Équipe</a>
+    <a href="#implantations">Implantations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="accueil">
+  <h1>Bienvenue à l'<span>Association Feu Vert</span></h1>
+  <p class="slogan">« Éclairer le chemin vers l’excellence académique »</p>
+  <p>
+    Une association engagée dans l'accompagnement académique,
+    méthodologique et scientifique des étudiants.
+  </p>
+  <a class="btn" href="#apropos">Découvrir l'AFV</a>
+  <a class="btn" href="#contact">Nous contacter</a>
+</section>
+
+<section id="apropos">
+  <h2 class="section-title">Qui sommes-nous ?</h2>
+  <div class="underline"></div>
+  <div class="intro">
+    <p>
+      L'Association Feu Vert (AFV) est une organisation qui œuvre
+      pour l'amélioration de la qualité de la formation académique
+      et scientifique des étudiants.
+    </p>
+    <p>
+      Née à Bukavu, dans la province du Sud-Kivu, l'AFV poursuit
+      son développement avec une nouvelle implantation à Kinshasa.
+      Elle souhaite contribuer à la formation d'une génération
+      d'étudiants capables de concevoir, conduire et défendre
+      leurs travaux scientifiques avec compétence.
+    </p>
+  </div>
+</section>
+
+<section id="missions">
+  <h2 class="section-title">Notre vision et nos missions</h2>
+  <div class="underline"></div>
+
+  <div class="cards">
+    <article class="card">
+      <div class="symbol">🎯</div>
+      <h3>Notre vision</h3>
+      <p>
+        Contribuer à l'émergence d'une génération d'étudiants
+        compétents, autonomes et excellents dans leurs parcours
+        académiques et scientifiques.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="symbol">📚</div>
+      <h3>Notre mission</h3>
+      <p>
+        Accompagner les étudiants dans la réalisation de leurs
+        travaux scientifiques et renforcer leurs compétences
+        méthodologiques et analytiques.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="symbol">🌟</div>
+      <h3>Nos valeurs</h3>
+      <p>
+        Excellence, rigueur scientifique, responsabilité,
+        engagement, intégrité et partage des connaissances.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="section-title">Nos services</h2>
+  <div class="underline"></div>
+
+  <div class="cards">
+    <article class="card">
+      <div class="symbol">📝</div>
+      <h3>Encadrement scientifique</h3>
+      <p>
+        Accompagnement méthodologique dans la conception
+        et la réalisation des TFC, mémoires et projets tutorés.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="symbol">📊</div>
+      <h3>Formation pratique</h3>
+      <p>
+        Renforcement des compétences théoriques, méthodologiques,
+        statistiques et utilisation des outils d'analyse.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="symbol">🎓</div>
+      <h3>Simulation de soutenance</h3>
+      <p>
+        Organisation de simulations de défense et de mini-jurys
+        pour améliorer la qualité des travaux scientifiques.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="symbol">🎤</div>
+      <h3>Coaching oral</h3>
+      <p>
+        Préparation à la prise de parole, à la communication
+        scientifique et à la gestion du stress devant un jury.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section id="admission">
+  <h2 class="section-title">Conditions d'admission</h2>
+  <div class="underline"></div>
+  <div class="intro">
+    <p>
+      L'AFV accueille les étudiants désireux de renforcer leurs
+      capacités académiques et scientifiques.
+    </p>
+    <p>
+      L'admission repose notamment sur la proposition d'un sujet
+      ou d'un thème de recherche valide, qui servira de point de
+      départ à l'accompagnement.
+    </p>
+  </div>
+</section>
+
+<section id="ressources">
+  <h2 class="section-title">Nos besoins et ressources</h2>
+  <div class="underline"></div>
+  <div class="intro">
+    <p>
+      Pour assurer ses activités et améliorer la qualité de ses
+      services, l'AFV recherche et mobilise des ressources
+      scientifiques, matérielles, numériques et financières.
+    </p>
+    <div class="cards">
+      <article class="card">
+        <h3>Ressources documentaires</h3>
+        <p>Livres scientifiques, ouvrages spécialisés et bibliothèque numérique.</p>
+      </article>
+      <article class="card">
+        <h3>Outils numériques</h3>
+        <p>Internet, outils de traitement de texte, Zotero, Mendeley et logiciels d'analyse.</p>
+      </article>
+      <article class="card">
+        <h3>Fonctionnement</h3>
+        <p>Matériel de travail et moyens nécessaires à la réalisation des activités.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="equipe">
+  <h2 class="section-title">Notre équipe dirigeante</h2>
+  <div class="underline"></div>
+  <div class="cards">
+    <article class="card team-card">
+      <div class="symbol">👩‍💼</div>
+      <h3>Psychologue Sephora Masudi</h3>
+      <p class="role">Présidente</p>
+    </article>
+
+    <article class="card team-card">
+      <div class="symbol">👨‍💼</div>
+      <h3>Docteur Harman Sanganira</h3>
+      <p class="role">Secrétaire général</p>
+    </article>
+
+    <article class="card team-card">
+      <div class="symbol">👨‍🎓</div>
+      <h3>Docteur Amani Kaheba Alexis</h3>
+      <p class="role">Visionnaire et fondateur</p>
+    </article>
+  </div>
+
+  <div class="intro" style="margin-top:30px;">
+    <p>
+      L'Association Feu Vert compte dix membres au total,
+      dont trois responsables principaux et sept autres membres
+      dont les identités ne sont pas publiées.
+    </p>
+  </div>
+</section>
+
+<section id="implantations">
+  <h2 class="section-title">Nos implantations</h2>
+  <div class="underline"></div>
+  <div class="cards">
+    <article class="card">
+      <div class="symbol">📍</div>
+      <h3>Bukavu – Sud-Kivu</h3>
+      <p>
+        Bukavu est la ville d'origine de l'Association Feu Vert,
+        où elle a commencé ses activités.
+      </p>
+    </article>
+    <article class="card">
+      <div class="symbol">📍</div>
+      <h3>Kinshasa</h3>
+      <p>
+        Kinshasa accueille la nouvelle implantation de l'AFV,
+        dans le cadre de son développement et de son expansion.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contactez l'AFV</h2>
+  <div class="underline"></div>
+  <div class="intro">
+    <p>
+      Pour toute information concernant nos activités,
+      nos services ou les modalités d'accompagnement,
+      contactez l'Association Feu Vert.
+    </p>
+
+    <div class="card" style="margin-top:25px;">
+      <h3>Nos numéros officiels</h3>
+      <a class="number" href="tel:+243975674308">+243 975 674 308</a>
+      <a class="number" href="tel:+243992944602">+243 992 944 602</a>
+      <a class="number" href="tel:+243994240373">+243 994 240 373</a>
+      <p class="small">Cliquez sur un numéro pour lancer un appel.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <h2>ASSOCIATION FEU VERT – AFV</h2>
+  <p>« Éclairer le chemin vers l’excellence académique »</p>
+  <p class="small">Bukavu – Kinshasa | République Démocratique du Congo</p>
+  <p class="small">© 2026 Association Feu Vert. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
